@@ -1,0 +1,8 @@
+_site
+.svn
+*.vimprojects
+.DS_Store
+*.swp
+Thumbs.db
+.gitconfig
+.sass-cache

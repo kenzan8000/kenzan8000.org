@@ -1,0 +1,34 @@
+markdown: redcarpet
+pygments: true
+
+title: Unemployed Drifter
+keywords: kenzan8000,blog
+
+# css
+scss:
+  source: _sass
+  destination: stylesheets
+
+# google analytics
+google_analytics:
+  account: UA-29760297-1
+
+# linkedin
+linkedin:
+  url: http://www.linkedin.com/in/kenzanhase
+
+# github
+github:
+  username: kenzan8000
+  url: https://github.com/kenzan8000
+
+# twitter
+twitter:
+  username: kenzan8000
+  url: https://twitter.com/kenzan8000
+
+# facebook
+facebook:
+  username: kenzan.hase
+  url: http://facebook.com/kenzan.hase
+  appid: 149729765206974
