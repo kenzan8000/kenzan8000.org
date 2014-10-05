@@ -1,0 +1,25 @@
+
+blog=/Users/kenzan8000/Dropbox/workspace/blog CD=. filter="*.html *.css *.scss *.yml *.md *.js *.rb *.ru *.sass Gemfile *.md *.haml *.gitignore Rakefile *.markdown" {
+ README.md
+ _config.yml
+ Gemfile
+ index.haml
+ Rakefile
+ _layouts=_layouts {
+  default.haml
+  post.haml
+ }
+ _posts=_posts {
+  2012-12-24-cooking.markdown
+  2013-03-29-objcvim.markdown
+  2014-02-02-travel.markdown
+ }
+ sass=sass {
+  app.sass
+  mixins=mixins {
+   _base.sass
+   _responsive.sass
+   _syntax.sass
+  }
+ }
+}

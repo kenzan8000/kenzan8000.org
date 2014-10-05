@@ -1,0 +1,22 @@
+\---
+layout: default
+\---
+
+#home.content
+  #sidebar-button
+    %img{:src => "/images/sidebar-button.png"}/
+  #post-info
+    #cover-photo-container
+      %img#cover-photo{:src => "/images/{{ page.cover }}"}/
+    #info-container
+      %h1#title {{ page.title }}
+      %span#date
+        {{ page.date | date_to_string }}
+  .post
+    {{ content }}
+  .colophon
+    %p
+      %span#pub-date Published on {{ page.date | date_to_string }}
+      %span.separator •
+      %span kenzan8000.org
+{{ content }}

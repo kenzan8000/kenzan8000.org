@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VimでObjective-Cを書く
-date: 2013-03-29
+date: 2013-03-29 12:00
 cover: 2013-03-29-objcvim.jpg
 ---
 　  

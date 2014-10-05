@@ -1,5 +1,8 @@
+name: Trevor
 markdown: redcarpet
-pygments: true
+highlighter: pygments
+
+exclude: ['*.haml', 'sass', 'Rakefile', 'Gemfile', 'Gemfile.lock', '*.vimprojects', '*.md']
 
 title: Unemployed Drifter
 keywords: kenzan8000,blog

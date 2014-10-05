@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 世界一周旅行してきた
-date: 2014-02-02
+date: 2014-02-02 12:00
 cover: 2014-02-02-travel.jpg
 ---
 　  

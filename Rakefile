@@ -1,65 +1,90 @@
-task :default => :server
+require 'haml'
+require 'fileutils'
+require 'fssm'
 
-desc 'Clean up generated site'
+def haml file
+	dir_name  = File.dirname(file)
+	out_name  = File.basename(file,'.haml') + ".html"
+	%x{ haml #{file} #{File.join(dir_name, out_name)} }
+end
+
+def haml_watcher
+	FSSM.monitor do
+		
+		path './' do
+			glob '**/*.haml'
+
+			update do |base, relative|
+				haml File.join(base,relative)
+			end
+
+			create do |base, relative|
+				haml File.join(base,relative)
+			end
+		end
+
+	end
+end
+
+desc 'Build haml files'
+task :build_haml do
+	Dir.glob("./**/*.haml") do |file|
+		haml(file)
+	end
+end
+
+desc 'Build sass files'
+task :build_sass do
+	sh "sass --update sass:css"
+end
+
+desc 'Build all haml and sass files then build jekyll site'
+task :build => [:build_sass, :build_haml] do
+	sh "jekyll build"
+end
+
+desc 'Clean all the files'
 task :clean do
-  cleanup
+	if File.exist?('./_site') then FileUtils.rm_rf './_site' end
+	if File.exist?('./css')   then FileUtils.rm_rf './css' end
+	FileUtils.rm Dir.glob('./**/*.html')
 end
 
-desc 'Build site with Jekyll'
-task :build => :clean do
-  compass
-  jekyll
+desc "Launch Jekyll server"
+task :serve => :build do
+	haml  = Thread.new { haml_watcher }
+	server = Thread.new { sh "jekyll serve -w"}
+	sass = Thread.new { sh "sass --watch sass:css" }
+	haml.join
+	server.join
+	sass.join
+
+	trap "INT" do
+		Thread.kill (haml)
+		Thread.kill (sass)
+		Thread.kill (server)
+	end
 end
 
-desc 'Start server with --auto'
-task :server => :clean do
-  compass
-  jekyll('serve --watch')
-end
-
-desc 'Build and deploy'
-task :deploy => :build do
-  sh 'rsync -rtzh --progress --delete _site/ username@servername:/var/www/websitename/'
-end
-
-desc 'Check links for site already running on localhost:4000'
-task :check_links do
-  begin
-    require 'anemone'
-    root = 'http://localhost:4000/'
-    Anemone.crawl(root, :discard_page_bodies => true) do |anemone|
-      anemone.after_crawl do |pagestore|
-        broken_links = Hash.new { |h, k| h[k] = [] }
-        pagestore.each_value do |page|
-          if page.code != 200
-            referrers = pagestore.pages_linking_to(page.url)
-            referrers.each do |referrer|
-              broken_links[referrer] << page
-            end
-          end
-        end
-        broken_links.each do |referrer, pages|
-          puts "#{referrer.url} contains the following broken links:"
-          pages.each do |page|
-            puts "  HTTP #{page.code} #{page.url}"
-          end
-        end
-      end
-    end
-
-  rescue LoadError
-    abort 'Install anemone gem: gem install anemone'
+desc "Create a new post"
+task :new_post, :title do |t, args|
+	if args.title
+		title = args.title
+	else
+		title = get_stdin("Title for the post: ")
+	end
+	filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.markdown"
+	if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
-end
-
-def cleanup
-  sh 'rm -rf _site'
-end
-
-def jekyll(opts = '')
-  sh 'jekyll ' + opts
-end
-
-def compass(opts = '')
-  sh 'compass compile -c config.rb --force ' + opts
+  puts "Creating new post: #{filename}"
+  open(filename, 'w') do |post|
+    post.puts "---"
+    post.puts "layout: post"
+    post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+    post.puts "comments: true"
+    post.puts "categories: "
+    post.puts "---"
+  end
 end

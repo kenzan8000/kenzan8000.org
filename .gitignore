@@ -1,8 +1,6 @@
 _site
-.svn
-*.vimprojects
-.DS_Store
-*.swp
-Thumbs.db
-.gitconfig
-.sass-cache
+.DS_STORE
+.sass-cache/
+.bundle/
+css/
+*.html
