@@ -1,6 +1,10 @@
-_site
 .DS_STORE
-.sass-cache/
-.bundle/
-css/
-*.html
+.DS_Store
+.Trashes
+.svn
+DerivedData
+*.vimprojects
+*.swp
+*.swo
+Thumbs.db
+.gitconfig
