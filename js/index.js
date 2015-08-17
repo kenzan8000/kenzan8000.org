@@ -5,9 +5,10 @@ $(function(){
         event.preventDefault();
         $('html, body').animate({ scrollTop: $('[name="'+this.hash.substring(1)+'"]').offset().top }, 200);
     });
+
     // fun-project's overlay
-    $(".fun-project").each(function() {
-        var funProject = $(this);
+    var designOverlay = function (self) {
+        var funProject = $(self);
         var body = funProject.find(".fun-project-body");
         var offsetX = funProject.width() * 0.2;
         body.css("padding-left", offsetX+"px");
@@ -15,5 +16,7 @@ $(function(){
         var offsetY = (funProject.height() - body.find("div").height()) / 2;
         body.css("padding-top", offsetY+"px");
         body.css("padding-bottom", offsetY+"px");
-    });
+    };
+    $(".fun-project").each(function() { designOverlay(this); });
+    $(".fun-project").mouseenter(function() { designOverlay(this); });
 });
