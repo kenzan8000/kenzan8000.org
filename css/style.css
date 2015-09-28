@@ -412,7 +412,29 @@ iframe.iPhone-right {
 .content {
     width: 640px;
 }
+/*
+.content-8 {
+    position: relative;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
 
+.content-8:before {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 600%;
+  background: #fff;
+  top: -150px;
+  left: -250%;
+  -webkit-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+*/
 .fun-project {
     position: relative;
 }
