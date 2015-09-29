@@ -18,14 +18,23 @@ h2, h3 {
 
 h1 {
     color: #333;
-    font-size: 4.8em;
+    font-size: 6.0em;
     font-family: 'Arvo', serif;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 2.3em;
-    color: #555;
+    font-size: 3.6em;
+    color: #333;
+    width: 640px;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 1.4em;
+    bottom: 0.0em;
+    left: 0;
+    right: 0;
 }
 
 h3 {
@@ -418,6 +427,8 @@ iframe.iPhone-right {
     background: #ebebeb;
     position: relative;
     overflow: hidden;
+    padding-top: 7.5em !important;
+    padding-bottom: 7.5em !important;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -431,16 +442,18 @@ iframe.iPhone-right {
     top: -50%;
     width: 150%;
     left: -25%;
-    -webkit-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 .transverse-block-bc-f {
     background: #fff;
     position: relative;
     overflow: hidden;
+    padding-top: 7.5em !important;
+    padding-bottom: 7.5em !important;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -454,10 +467,10 @@ iframe.iPhone-right {
     top: -50%;
     width: 150%;
     left: -25%;
-    -webkit-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 .fun-project {
