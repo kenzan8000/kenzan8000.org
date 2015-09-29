@@ -215,8 +215,8 @@ img {
     background-color: #333;
 }
 
-.bc-f8 {
-    background-color: #f8f8f8;
+.bc-eb {
+    background-color: #ebebeb;
 }
 
 .bc-turquoise {
@@ -408,12 +408,14 @@ iframe.iPhone-right {
     width: 272px;
     height: 484px;
 }
+
 /* */
 .content {
     width: 640px;
 }
-/*
-.content-8 {
+
+.transverse-block-bc-eb {
+    background: #ebebeb;
     position: relative;
     overflow: hidden;
     -webkit-background-size: cover;
@@ -421,20 +423,43 @@ iframe.iPhone-right {
     background-position: center center;
 }
 
-.content-8:before {
-  content: "";
-  position: absolute;
-  height: 300px;
-  width: 600%;
-  background: #fff;
-  top: -150px;
-  left: -250%;
-  -webkit-transform: rotate(-8deg);
-  -ms-transform: rotate(-8deg);
-  -o-transform: rotate(-8deg);
-  transform: rotate(-8deg);
+.transverse-block-bc-eb:before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    top: -50%;
+    width: 150%;
+    left: -25%;
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
 }
-*/
+
+.transverse-block-bc-f {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.transverse-block-bc-f:before {
+    content: "";
+    position: absolute;
+    background-color: #ebebeb;
+    height: 100%;
+    top: -50%;
+    width: 150%;
+    left: -25%;
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
 .fun-project {
     position: relative;
 }
