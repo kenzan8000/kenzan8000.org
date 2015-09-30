@@ -18,20 +18,20 @@ h2, h3 {
 
 h1 {
     color: #333;
-    font-size: 6.0em;
+    font-size: 5.6em;
     font-family: 'Arvo', serif;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 3.6em;
     color: #333;
+    font-size: 3.2em;
     width: 640px;
     height: 50%;
     overflow: auto;
     margin: auto;
     position: absolute;
-    top: 1.4em;
+    top: 1.7em;
     bottom: 0.0em;
     left: 0;
     right: 0;
@@ -313,7 +313,7 @@ img {
 }
 
 .f-small-2 {
-    font-size: 0.75em;
+    font-size: 0.8em;
 }
 
 .a-left {
@@ -472,6 +472,32 @@ iframe.iPhone-right {
     -o-transform: rotate(-5deg);
     transform: rotate(-5deg);
 }
+/*
+.transverse-block-bc-3 {
+    background: #333;
+    position: relative;
+    overflow: hidden;
+    padding-top: 7.5em !important;
+    padding-bottom: 7.5em !important;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.transverse-block-bc-3:before {
+    content: "";
+    position: absolute;
+    background-color: #ebebeb;
+    height: 100%;
+    top: -50%;
+    width: 150%;
+    left: -25%;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+*/
 
 .fun-project {
     position: relative;
@@ -541,9 +567,9 @@ iframe.iPhone-right {
 .scroll-top {
     width: 0;
     height: 0;
-    border-right: 36px solid transparent;
-    border-left: 36px solid transparent;
-    border-bottom: 40px solid #ccc;
+    border-right: 54px solid transparent;
+    border-left: 54px solid transparent;
+    border-bottom: 60px solid #ccc;
 }
 
 .scroll-top:hover {

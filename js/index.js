@@ -1,6 +1,6 @@
 $(function(){
     // scroll
-    //$('.scroll-top').click(function() { $("html, body").animate({ scrollTop: 0 }, 200); });
+    $('.scroll-top').click(function() { $("html, body").animate({ scrollTop: 0 }, 200); });
     $(".scroll").click(function(event) {
         event.preventDefault();
         $('html, body').animate({ scrollTop: $('[name="'+this.hash.substring(1)+'"]').offset().top }, 200);
