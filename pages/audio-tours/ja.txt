@@ -1,0 +1,34 @@
+Audio Tour
+
+Audio Tourは、音声による案内で、街のランドマークの解説をするアプリです。美術館の音声ガイドがアートを解説するのと同じように、あなたの街に対するより深い理解をお手伝いします。
+
+san francisco,sf,audio,tour,offline,map,travel,trip,tourist,tourism,guide,ar,poi,camera,sight seeing
+
+
+1.png
+Audio Tour
+音声による案内で街のランドマークの解説をするアプリです。美術館の音声ガイドがアートを解説するのと同じように、あなたの街に対するより深い理解をお手伝いします。
+
+San Francisco
+San Francisco
+
+2.png
+
+
+あなたの旅行をサポートする2つの機能
+ARガイド
+位置情報を元に、カメラに仮想現実のランドマークを表示します。あなたが実際にこの街にいる時に、この機能を立ち上げ、カメラをランドマークに向けてみてください。
+3.jpg
+
+
+Mapガイド
+街のランドマークを一望できるマップを提供します。外出の前や旅行中に、どこへ行くか計画をたてましょう。
+4.jpg
+
+
+5.png
+
+Audio Tourで
+より良い旅を！
+San Francisco
+San Francisco

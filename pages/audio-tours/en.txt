@@ -1,0 +1,32 @@
+Audio Tour
+
+Audio Tour is an app offering an audio guide of the landmarks by AR and map, similar to how a museum audio guide helps you understand the art at a deeper level.
+
+san francisco,sf,audio,tour,offline,map,travel,trip,tourist,tourism,guide,ar,poi,camera,sight seeing
+
+1.png
+Audio Tour
+Offering an audio guide of the landmarks, similar to how a museum audio guide helps you understand the works of art at a deeper level
+
+San Francisco
+San Francisco
+
+2.png
+
+
+How it works
+AR Guide
+The live camera view displays landmarks on top of the image from the camera at your location. Face your camera to the landmarks.
+3.jpg
+
+
+Map Guide
+The map view gives you a birds-eye view of the city. You can plan places to visit before going out or check them out during your trip.
+4.jpg
+
+
+5.png
+
+Give it a try!
+San Francisco
+San Francisco
