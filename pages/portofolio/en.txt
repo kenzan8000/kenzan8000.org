@@ -1,0 +1,37 @@
+Who are you?
+My name is Kenzan Hase. I am a software developer who likes fishing basses and traveling. This is the portofolio page that introduces my personal projects. Also, please check out my linkedin profile.
+https://www.linkedin.com/in/kenzanhase/
+
+Audio Tour
+A mobile app that offers an instant audio guide of the city’s landmarks, similar to how a museum audio guide helps you understand the works of art at a deeper level. (Website, App Store, Google Play)
+https://kenzan8000.org/audio-tours/
+https://apps.apple.com/us/app/audio-tour-san-francisco/id1182851195
+https://play.google.com/store/apps/details?id=org.kenzan8000.audiotour
+
+STOCKFISH
+A fish planting schedule mail magazine compiling the updates from online sources for you to customize the information by waterbody locations, species, frequency you receive the email, and etc. (Website)
+https://www.stockfish.info/
+
+Fastladder related Apps
+Ladder Client
+An iOS client app for Fastladder that provides more mobile-optimized experience than just using a mobile browser. (App Store)
+https://apps.apple.com/us/app/ladder-client/id1317507559
+
+Fastladder Discover Feeds for Chrome
+A Google Chrome extension helping you discover RSS feeds on a website and subscribe them on your Fastladder. (Chrome Web Store)
+https://chrome.google.com/webstore/detail/fastladder-discover-feeds/kpgpnckgeicbcilknadjilhhhfpeijec
+
+Fastladder Push Pin for Chrome
+A Google Chrome extension adding the website you are currently browsing to your Fastladder pin list. (Chrome Web Store)
+https://chrome.google.com/webstore/detail/fastladder-discover-feeds/kpgpnckgeicbcilknadjilhhhfpeijec
+
+Trip Phrases
+An iOS app that allows you to learn trip phrases when traveling foreign countries in 26 languages. You can imitate the voice or just let local people listen if it’s difficult for you to pronounce the phrases. (App Store)
+https://apps.apple.com/us/app/trip-phrases/id909571043
+
+Avoid Crime
+An iOS app that helps you avoid the route there were more criminal activities through the graphical information on the map. (Github)
+https://github.com/kenzan8000/Avoid-Crime
+
+※: Fastladder is an open source RSS reader. (Github)
+https://github.com/kenzan8000/Avoid-Crime
