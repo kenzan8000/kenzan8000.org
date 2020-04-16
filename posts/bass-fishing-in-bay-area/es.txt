@@ -2,7 +2,7 @@ Pesca de lubina en el Área de la Bahía
 
 Le brindará la regulación local y los puntos ideales para pescar lubina en él Área de la Bahía.
 
-bass,fishing,bay area,california,san francisco,oakland,berkeley,san jose,reservoir,lake,river,delta,clear lake,fishing license,daily fishing permit
+bass,lubina,fishing,pesca,bay area,área de la bahía,california,san francisco,oakland,berkeley,san jose,san josé,reservoir,lake,lago,river,río,delta,clear lake,fishing license,licencia de pesca,daily fishing permit,permiso de pesca diario
 
 
 1.jpg
